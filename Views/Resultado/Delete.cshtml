@@ -36,10 +36,10 @@
             @Html.DisplayFor(model => model.DataRealizacao)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Proissional)
+            @Html.DisplayNameFor(model => model.Profissional)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Proissional.ProfissionaNome)
+            @Html.DisplayFor(model => model.Profissional.ProfissionaNome)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.ObservacaoResultado)
@@ -52,6 +52,6 @@
     <form asp-action="Delete">
         <input type="hidden" asp-for="ResultadoId" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <aclass ="a" asp-action="Index">Voltar para a lista</a>
+        <a class ="a" asp-action="Index">Voltar para a lista</a>
     </form>
 </div>

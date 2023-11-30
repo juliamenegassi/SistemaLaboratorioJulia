@@ -31,9 +31,9 @@
                 @Html.DisplayFor(modelItem => item.Cargo.CargoNome)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ProfissionalId">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.ProfissionalId">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.ProfissionalId">Deletar</a>
+                <a class ="botao" asp-action="Edit" asp-route-id="@item.ProfissionalId">Editar</a> |
+                <a class="botao" asp-action="Details" asp-route-id="@item.ProfissionalId">Detalhes</a> |
+                <a class="botao" asp-action="Delete" asp-route-id="@item.ProfissionalId">Deletar</a>
             </td>
         </tr>
 }

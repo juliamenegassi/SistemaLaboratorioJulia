@@ -25,7 +25,7 @@
                 @Html.DisplayNameFor(model => model.DataRealizacao)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Proissional)
+                @Html.DisplayNameFor(model => model.Profissional)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.ObservacaoResultado)
@@ -49,16 +49,16 @@
                 @Html.DisplayFor(modelItem => item.DataRealizacao)
             </td>
             <td>
-               @Html.DisplayFor(modelItem => item.Proissional.ProfissionaNome)
+               @Html.DisplayFor(modelItem => item.Profissional.ProfissionaNome)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.ObservacaoResultado)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ResultadoId">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.ResultadoId">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.ResultadoId">Deletar</a> |
-                <a asp-action="Imprimir" asp-route-id="@item.ResultadoId">Imprimir</a>
+                <a class="botao" asp-action="Edit" asp-route-id="@item.ResultadoId">Editar</a> |
+                <a class="botao" asp-action="Details" asp-route-id="@item.ResultadoId">Detalhes</a> |
+                <a class="botao" asp-action="Delete" asp-route-id="@item.ResultadoId">Deletar</a> |
+                <a class="botao" asp-action="Imprimir" asp-route-id="@item.ResultadoId">Imprimir</a>
             </td>
         </tr>
 }

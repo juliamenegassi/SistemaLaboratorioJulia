@@ -106,9 +106,9 @@
                 @Html.DisplayFor(modelItem => item.PacienteObservacao)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.PacienteId">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.PacienteId">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.PacienteId">Deletar</a>
+                <a class="botao" asp-action="Edit" asp-route-id="@item.PacienteId">Editar</a> |
+                <a class="botao" asp-action="Details" asp-route-id="@item.PacienteId">Detalhes</a> |
+                <a class="botao" asp-action="Delete" asp-route-id="@item.PacienteId">Deletar</a>
             </td>
         </tr>
 }

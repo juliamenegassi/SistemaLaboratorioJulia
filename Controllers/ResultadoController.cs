@@ -21,7 +21,7 @@ namespace LaboratorioExame.Controllers
         // GET: Resultado
         public async Task<IActionResult> Index()
         {
-            var contexto = _context.Resultado.Include(r => r.Exame).Include(r => r.Paciente).Include(r => r.Proissional);
+            var contexto = _context.Resultado.Include(r => r.Exame).Include(r => r.Paciente).Include(r => r.Profissional);
             return View(await contexto.ToListAsync());
         }
 
@@ -36,7 +36,7 @@ namespace LaboratorioExame.Controllers
             var resultado = await _context.Resultado
                 .Include(r => r.Exame)
                 .Include(r => r.Paciente)
-                .Include(r => r.Proissional)
+                .Include(r => r.Profissional)
                 .FirstOrDefaultAsync(m => m.ResultadoId == id);
             if (resultado == null)
             {
@@ -142,7 +142,7 @@ namespace LaboratorioExame.Controllers
             var resultado = await _context.Resultado
                 .Include(r => r.Exame)
                 .Include(r => r.Paciente)
-                .Include(r => r.Proissional)
+                .Include(r => r.Profissional)
                 .FirstOrDefaultAsync(m => m.ResultadoId == id);
             if (resultado == null)
             {
@@ -186,7 +186,7 @@ namespace LaboratorioExame.Controllers
             var resultado = await _context.Resultado
                 .Include(r => r.Exame)
                 .Include(r => r.Paciente)
-                .Include(r => r.Proissional)
+                .Include(r => r.Profissional)
                 .FirstOrDefaultAsync(m => m.ResultadoId == id);
 
             if(resultado == null)

@@ -56,7 +56,10 @@ img {
 .nav-item {
     margin-right: 30px;
 }
-.navbar-nav {
+.nav-item :hover {
+    color: #1BC2B8 !important;
+}
+    .navbar-nav {
     margin-left:119px;
 }
 .img-banner {
@@ -70,4 +73,7 @@ img {
 .bemvindo {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #1BC2B8 !important;
+}
+.botao {
+    text-decoration: none;
 }

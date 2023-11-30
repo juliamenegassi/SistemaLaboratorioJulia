@@ -24,15 +24,15 @@ namespace LaboratorioExame.Models
         public string ResultadoDescricao { get; set; } = string.Empty;
 
         [Column("DataRealizacao")]
-        [Display(Name = "Data da Realizacao")]
+        [Display(Name = "Data da Realização")]
         public DateTime DataRealizacao { get; set; }
 
         [ForeignKey("ProfissionalId")]
         public int ProfissionalId { get; set; }
-        public Profissional? Proissional { get; set; }
+        public Profissional? Profissional { get; set; }
 
         [Column("ObservacaoResultado")]
-        [Display(Name = "Observacao do Resultado")]
+        [Display(Name = "Observação do Resultado")]
         public string ObservacaoResultado { get; set; } = string.Empty;
     }
 }
