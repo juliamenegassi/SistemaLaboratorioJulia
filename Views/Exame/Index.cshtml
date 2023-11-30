@@ -1,0 +1,47 @@
+﻿@model IEnumerable<LaboratorioExame.Models.Exame>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Exame</h1>
+
+<p>
+    <a class="btn-criar" asp-action="Create">Criar novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ExameNome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExameObservacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExameMaterial)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExameNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExameObservacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExameMaterial)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ExameId">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.ExameId">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.ExameId">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

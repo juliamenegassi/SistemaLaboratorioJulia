@@ -1,3 +1,4 @@
+using LaboratorioExame.Models;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<Contexto>
-    (options => options.UseSqlServer("Data Source=SB-1490628\\SQLSENAI;Initial Catalog = Calculadora;Integrated Security = True;TrustServerCertificate = True"));
+    (options => options.UseSqlServer("Data Source=SB-1490628\\SQLSENAI;Initial Catalog = SistemaLaboratorio;Integrated Security = True;TrustServerCertificate = True"));
 
 var app = builder.Build();
 

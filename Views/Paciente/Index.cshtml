@@ -1,0 +1,116 @@
+﻿@model IEnumerable<LaboratorioExame.Models.Paciente>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Paciente</h1>
+
+<p>
+    <a class ="btn-criar" asp-action="Create">Criar novo</a>
+</p>
+<div>
+    @using (Html.BeginForm("Index", "Paciente", FormMethod.Get))
+    {
+            <p>
+                Digite aqui sua pesquisa: @Html.TextBox("pesquisa")
+                <input class="btn btn-primary"type="submit" value="Pesquisar" />
+            </p>
+    }
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PacienteNome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pacientesexo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PacienteCpf)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PacienteTelefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PacienteNomeMae)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PacienteTipoSanguineo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PacienteIdade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PacienteAlergia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PacienteEndereco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PacientePeso)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PacienteAltura)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PacienteObservacao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PacienteNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pacientesexo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PacienteCpf)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PacienteTelefone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PacienteNomeMae)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PacienteTipoSanguineo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PacienteIdade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PacienteAlergia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PacienteEndereco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cidade.CidadeNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PacientePeso)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PacienteAltura)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PacienteObservacao)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PacienteId">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.PacienteId">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.PacienteId">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

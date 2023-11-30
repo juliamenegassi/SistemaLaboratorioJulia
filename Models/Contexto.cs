@@ -8,12 +8,12 @@ namespace LaboratorioExame.Models
         {
 
         }
-        //public DbSet<Paciente> Paciente { get; set; }
-        //public DbSet<Profissional> Profissional { get; set; }
-        //public DbSet<Cargo> Cargo { get; set; }
-        //public DbSet<Estado> Estado { get; set; }
-        //public DbSet<Cidade> Cidade { get; set; }
-        //public DbSet<Resultado> Resultado { get; set; }
-        //public DbSet<Exame> Exame { get; set; }
+        public DbSet<Paciente> Paciente { get; set; }
+        public DbSet<Profissional> Profissional { get; set; }
+        public DbSet<Cargo> Cargo { get; set; }
+        public DbSet<Estado> Estado { get; set; }
+        public DbSet<Cidade> Cidade { get; set; }
+        public DbSet<Resultado> Resultado { get; set; }
+        public DbSet<Exame> Exame { get; set; }
     }
 }

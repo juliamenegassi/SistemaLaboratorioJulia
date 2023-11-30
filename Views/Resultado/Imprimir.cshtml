@@ -1,0 +1,39 @@
+﻿@model LaboratorioExame.Models.Resultado
+@{
+    Layout = null;
+}
+<link href="~/css/imprimir.css" rel="stylesheet" />
+    <hr />
+            <main>
+                <header>
+                    <img src="~/Img/Logo.png" alt="">
+                </header>
+                <div class="informacoes">
+                    <div>
+                        <h3>NOME DO PACIENTE: @Html.DisplayFor(model => model.Paciente.PacienteNome)</h3>
+                        <h3>SEXO: @Html.DisplayFor(model => model.Paciente.Pacientesexo)</h3>
+                    </div>
+                    <div>
+                        <h3>IDADE: @Html.DisplayFor(model => model.Paciente.PacienteIdade)</h3>
+                        <h3>CLÍNICA: LabMed</h3>
+                    </div>
+                    </div>
+                    <div class="exame">
+                        <div class="">
+                            <h2>EXAME: @Html.DisplayFor(model => model.Exame.ExameNome)</h2>
+                            <h4>OBSERVAÇÃO: @Html.DisplayFor(model => model.Exame.ExameObservacao)</h4>
+                        </div>
+                        <div class="">
+                            <h4>PROFISSIONAL: @Html.DisplayFor(model => model.Proissional.ProfissionaNome)</h4>
+                            <h4>DATA DE COLETA: @Html.DisplayFor(model => model.DataRealizacao) </h4>
+                        </div>
+                    </div>
+                    <div class="resultado">
+                        <h3>RESULTADO:</h3>
+                        <h3>@Html.DisplayFor(model => model.ResultadoDescricao)</h3>
+                    </div>
+                    <div class="rodape">
+                        <h4>METODOLOGIA: JAFFÉ AUTOMATIZADO</h4>
+                    </div>
+                </main>
+</div>
