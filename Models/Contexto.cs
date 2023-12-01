@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using LaboratorioExame.Models;
 
 namespace LaboratorioExame.Models
 {
@@ -15,5 +16,7 @@ namespace LaboratorioExame.Models
         public DbSet<Cidade> Cidade { get; set; }
         public DbSet<Resultado> Resultado { get; set; }
         public DbSet<Exame> Exame { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
+       
     }
 }

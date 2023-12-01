@@ -17,10 +17,12 @@ body {
     margin-bottom: 60px;
     background-color: #E2FFFE !important;
 }
+
 .menu {
     background-color: #AFE4E2 !important;
     color: white !important;
 }
+
 .btn-criar {
     text-decoration: none;
     color: #00A79D !important;
@@ -29,6 +31,7 @@ body {
     border-radius: 4px;
     background-color: transparent;
 }
+
 .a {
     text-decoration: none;
     color: #00A79D !important;
@@ -41,39 +44,47 @@ body {
 a {
     color: #00A79D !important;
 }
+
 .footer {
     background-color: #AFE4E2 !important;
 }
+
 img {
     width: 70%;
     margin-left: 10px;
     height: 70%;
-  
 }
+
 .img-logo {
     margin-right: 10px;
 }
 .nav-item {
     margin-right: 30px;
 }
+
 .nav-item :hover {
     color: #1BC2B8 !important;
 }
-    .navbar-nav {
+
+.navbar-nav {
     margin-left:119px;
 }
+
 .img-banner {
-    margin-bottom: -18px;
+  margin-bottom: -18px;
 }
+
 .descricao {
     width: 80%;
     height: 80%;
     margin-left: 114px;
 }
+
 .bemvindo {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #1BC2B8 !important;
 }
+
 .botao {
     text-decoration: none;
 }
